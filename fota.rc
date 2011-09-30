@@ -111,6 +111,11 @@ on boot
 service ueventd /sbin/ueventd
     critical
     
+run custom recovery functions
+    service sdx /sbin/recovery.sh   
+    user root 
+    oneshot
+
 ## Daemon processes to be run by init.
 ##
 #service console /system/bin/sh

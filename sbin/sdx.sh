@@ -17,7 +17,7 @@ sync
 chmod 755 /sbin/*
 
 # Fix screwy ownerships
-for blip in conf default.prop fota.rc init init.goldfish.rc init.rc init.smdkc110.rc lib lpm.rc modules recovery.rc res sbin
+for blip in lib res sbin default.prop fota.rc init init.goldfish.rc init.rc init.smdkc210.rc init_kernel_only.rc lpm.rc recovery.rc ueventd.goldfish.rc ueventd.rc ueventd.smdkc210.rc
 do
   chown root.system /$blip
   chown root.system /$blip/*
