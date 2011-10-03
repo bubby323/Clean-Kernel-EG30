@@ -84,7 +84,7 @@ run custom recovery functions
     user root 
     oneshot
 
-service recovery /sbin/recovery
+#service recovery /sbin/recovery
 
 service adbd /sbin/adbd recovery
 
