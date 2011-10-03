@@ -23,7 +23,7 @@ done
 chown root.system /lib/modules/*
 chown root.system /res/images/*
 
-/sbin/busybox test -d /etc || /bin/busybox mkdir /etc
+/sbin/busybox test -d /etc || /sbin/busybox mkdir /etc
 /sbin/busybox cp /res/etc/recovery.fstab /etc/recovery.fstab
 /sbin/busybox mount -o remount,ro rootfs /
 /sbin/recovery
