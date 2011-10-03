@@ -9,6 +9,7 @@ on init
     export EXTERNAL_STORAGE /sdcard
 
     mkdir /sdcard
+    mkdir /emmc
     mkdir /preload
     mkdir /system
     mkdir /system2
