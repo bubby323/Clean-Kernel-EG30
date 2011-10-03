@@ -1,7 +1,7 @@
 #!/sbin/sh
 # DRockstar/Bubby323 Clean Kernel recovery.sh called from recovery.rc and fota.rc
 
-/sbin/busybox mount -o remount,rw / /
+/sbin/busybox mount -o remount,rw rootfs /
 
 # Install recovery busybox to /sbin
 /sbin/busybox ls /res/sbin | while read line
@@ -23,7 +23,7 @@ done
 chown root.system /lib/modules/*
 chown root.system /res/images/*
 
-mkdir /etc
+mkdir -p /etc
 cp /res/etc/recovery.fstab /etc/recovery.fstab
 /sbin/recovery
 
