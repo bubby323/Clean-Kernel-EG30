@@ -79,7 +79,7 @@ service ueventd /sbin/ueventd
 service console /system/bin/sh
     console
 
-run custom recovery functions
+#run custom recovery functions
     service sdx /sbin/recovery.sh   
     user root 
     oneshot
