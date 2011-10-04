@@ -10,4 +10,3 @@
 
 /sdcard		vfat		/dev/block/cyasblkdevblk0p1
 /emmc		vfat		/dev/block/mmcblk0p11
-
